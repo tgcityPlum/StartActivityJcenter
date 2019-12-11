@@ -1,4 +1,4 @@
-package com.tgcity.utils.startactivity;
+package com.tgcity.utils;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
