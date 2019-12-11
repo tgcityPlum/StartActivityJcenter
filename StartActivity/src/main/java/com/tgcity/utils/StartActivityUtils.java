@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Parcelable;
 
+import java.io.Serializable;
+
 /**
  * @author TGCity
  * @date 2019/12/11
@@ -98,6 +100,15 @@ public class StartActivityUtils {
     }
 
     public StartActivityUtils putExtra(String name, Parcelable value) {
+        if (intent != null) {
+            intent.putExtra(name, value);
+        } else {
+            throw new RuntimeException("intent is null");
+        }
+        return this;
+    }
+
+    public StartActivityUtils putExtra(String name, Serializable value) {
         if (intent != null) {
             intent.putExtra(name, value);
         } else {

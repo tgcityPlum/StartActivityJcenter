@@ -52,7 +52,7 @@ def siteUrl = 'https://github.com/tgcityPlum/StartActivityJcenter' // 项目主�
 def gitUrl = 'https://github.com/tgcityPlum/StartActivityJcenter.git' // 项目的git地址
 def module_name = 'StartActivity' // 项目的名称
 group = 'com.tgcity.utils' // 所在组
-version = "1.0.2" //aar的版本号
+version = "1.0.3" //aar的版本号
 
 install {
     repositories.mavenInstaller {
